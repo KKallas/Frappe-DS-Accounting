@@ -2,7 +2,7 @@
  "allow_copy": 0, 
  "allow_guest_to_view": 0, 
  "allow_import": 0, 
- "allow_rename": 0, 
+ "allow_rename": 1, 
  "autoname": "field:dept", 
  "beta": 0, 
  "creation": "2018-03-28 18:35:49.185177", 
@@ -87,7 +87,7 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 0, 
- "modified": "2018-03-28 18:43:15.433128", 
+ "modified": "2018-05-04 13:14:26.553467", 
  "modified_by": "Administrator", 
  "module": "Accounting", 
  "name": "Department", 
@@ -96,7 +96,6 @@
  "permissions": [
   {
    "amend": 0, 
-   "apply_user_permissions": 0, 
    "cancel": 0, 
    "create": 1, 
    "delete": 1, 
