@@ -32,3 +32,16 @@ class Item(Document):
 		#add source
 		new_line = self.append("sources",{"source":source})
 		new_line.save()
+
+	def getStock(self):
+		#get all bins for this unit
+		binList = frappe.get_all("Bin",filters={'Item':self.name})
+		if not binList:
+			return 0
+		#loop through all bins and get value
+		total = 0
+		for binName in binList:
+			bin = frappe.get_doc("Bin",binName)
+			total = total+bin.qty
+
+		return total
